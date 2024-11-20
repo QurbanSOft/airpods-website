@@ -1,0 +1,155 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #1db954; /* Green accent color */
+}
+
+/* Hero section */
+.hero {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Features section */
+.features, .pricing, .contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features h3, .pricing h3, .contact h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1db954; /* Green accent color */
+}
+
+.features p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Pricing section */
+.pricing {
+    background-color: #f9f9f9;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+
+.pricing .price {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Contact section */
+.contact p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    .features p, .pricing p, .contact p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 0.9rem;
+    }
+}
